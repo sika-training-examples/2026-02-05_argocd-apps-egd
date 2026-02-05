@@ -23,7 +23,7 @@ spec:
         host: manual-sync.apps.egd.germanywestcentral.aroapp.io
         replicas: 3
         TEXT: "manual_sync"
-        TEXT_SUFFIX: v3
+        TEXT_SUFFIX: v4
 
         ingressClassName: openshift-default
         ingressTlsDisable: true
