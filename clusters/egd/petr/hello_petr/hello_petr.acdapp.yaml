@@ -23,6 +23,6 @@ spec:
       path: charts/hello-world
       helm:
         valueFiles:
-        - '$values/clusters/egd/ondrej/hello_petr/hello_petr.values.yaml'
+        - '$values/clusters/egd/petr/hello_petr/hello_petr.values.yaml'
     - repoURL: https://gitlab.sikademo.com/egd/argocd-apps-egd.git
       ref: values
