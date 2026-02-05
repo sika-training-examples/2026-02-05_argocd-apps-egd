@@ -26,7 +26,7 @@ spec:
         host: sync-window.apps.egd.germanywestcentral.aroapp.io
         replicas: 3
         TEXT: "sync-window"
-        TEXT_SUFFIX: v2
+        TEXT_SUFFIX: v3
 
         ingressClassName: openshift-default
         ingressTlsDisable: true
