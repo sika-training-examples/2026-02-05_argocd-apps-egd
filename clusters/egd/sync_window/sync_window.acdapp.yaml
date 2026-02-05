@@ -11,6 +11,9 @@ spec:
     namespace: sync-window
     server: https://kubernetes.default.svc
   syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
     syncOptions:
       - CreateNamespace=true
   source:
@@ -23,7 +26,7 @@ spec:
         host: sync-window.apps.egd.germanywestcentral.aroapp.io
         replicas: 3
         TEXT: "sync-window"
-        TEXT_SUFFIX: v1
+        TEXT_SUFFIX: v2
 
         ingressClassName: openshift-default
         ingressTlsDisable: true
