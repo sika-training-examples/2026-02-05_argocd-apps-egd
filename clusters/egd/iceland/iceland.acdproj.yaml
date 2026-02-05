@@ -13,4 +13,5 @@ spec:
   - namespace: 'iceland-2'
     server: 'https://kubernetes.default.svc'
   sourceRepos:
+  - 'https://github.com/sikalabs/charts.git'
   - 'https://gitlab.sikademo.com/iceland/iceland-values.git'
