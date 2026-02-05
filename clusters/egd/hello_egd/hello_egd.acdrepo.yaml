@@ -7,6 +7,6 @@ metadata:
     argocd.argoproj.io/secret-type: repo-creds
 stringData:
   type: oci
-  url: oci://registry.sikademo.com/docker/hello-egd
+  url: oci://registry.sikademo.com
   username: ondrejsika
   password: asdfasdf
