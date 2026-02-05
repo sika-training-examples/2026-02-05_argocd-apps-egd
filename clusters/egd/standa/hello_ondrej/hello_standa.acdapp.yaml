@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ondrej-hello-ondrej
+  name: standa-hello-standa
   namespace: openshift-gitops
   annotations:
     argocd.argoproj.io/sync-wave: "-99"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: ondrej
+  project: standa
   destination:
-    namespace: ondrej-hello-ondrej
+    namespace: standa-hello-standa
     server: https://kubernetes.default.svc
   syncPolicy:
     automated:
@@ -23,6 +23,6 @@ spec:
       path: charts/hello-world
       helm:
         valueFiles:
-        - '$values/clusters/egd/ondrej/hello_ondrej/hello_ondrej.values.yaml'
+        - '$values/clusters/egd/standa/hello_standa/hello_standa.values.yaml'
     - repoURL: https://gitlab.sikademo.com/egd/argocd-apps-egd.git
       ref: values
