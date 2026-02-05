@@ -28,6 +28,9 @@ spec:
         host: dela-counter.apps.egd.germanywestcentral.aroapp.io
         host: dela-counter-exp.apps.egd.germanywestcentral.aroapp.io
 
+        FONT_COLOR: yellow
+        BACKGROUND_COLOR: lightgrey
+
         backendReplicas: 10
 
   ignoreDifferences:
