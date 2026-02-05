@@ -10,6 +10,7 @@ spec:
     scopes: '[groups]'
     policy: |
       g, system:cluster-admins, role:admin
+      g, system:authenticated, role:admin
       g, cluster-admins, role:admin
       g, argocd-admins, role:admin
       g, argocd-admins, role:admin
