@@ -4,7 +4,7 @@ metadata:
   name: repo-oci-hello-egd
   namespace: openshift-gitops
   labels:
-    argocd.argoproj.io/secret-type: repo-creds
+    argocd.argoproj.io/secret-type: repository
 stringData:
   type: oci
   url: oci://registry.sikademo.com
