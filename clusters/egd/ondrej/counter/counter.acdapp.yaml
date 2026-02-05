@@ -28,7 +28,7 @@ spec:
         host: ondrej-counter.apps.egd.germanywestcentral.aroapp.io
         host: ondrej-counter-exp.apps.egd.germanywestcentral.aroapp.io
 
-        EXTRA_TEXT: v2
+        EXTRA_TEXT: v3
 
   ignoreDifferences:
     - group: apps
