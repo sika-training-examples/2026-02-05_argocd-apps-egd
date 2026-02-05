@@ -27,3 +27,9 @@ spec:
 
         host: ondrej-counter.apps.egd.germanywestcentral.aroapp.io
         host: ondrej-counter-exp.apps.egd.germanywestcentral.aroapp.io
+  ignoreDifferences:
+    - group: apps
+      kind: Deployment
+      name: frontend
+      jsonPointers:
+        - /spec/replicas
