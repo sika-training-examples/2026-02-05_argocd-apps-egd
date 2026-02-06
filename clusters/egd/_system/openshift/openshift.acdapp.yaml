@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: rbac
+  name: openshift
   namespace: openshift-gitops
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -18,4 +18,4 @@ spec:
       - CreateNamespace=true
   sources:
     - repoURL: https://gitlab.sikademo.com/egd/argocd-apps-egd.git
-      path: ./clusters/egd/_system/rbac/manifests
+      path: ./clusters/egd/_system/openshift/manifests
