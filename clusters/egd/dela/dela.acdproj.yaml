@@ -12,5 +12,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   - namespace: 'dela-hello-dela'
     server: 'https://kubernetes.default.svc'
+  - namespace: 'openshift-config-managed'
+    server: 'https://kubernetes.default.svc'
   sourceRepos:
   - '*'

@@ -14,5 +14,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   - namespace: 'standa-hello-standa'
     server: 'https://kubernetes.default.svc'
+  - namespace: 'openshift-config-managed'
+    server: 'https://kubernetes.default.svc'
   sourceRepos:
   - '*'
