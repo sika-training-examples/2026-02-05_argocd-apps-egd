@@ -9,10 +9,10 @@ spec:
   target:
     alias: egd
     bootstrapServers: 20.218.198.58:29092
-    groupId: mm2
-    configStorageTopic: mm2-configs
-    offsetStorageTopic: mm2-offsets
-    statusStorageTopic: mm2-status
+    groupId: mm2-praha-to-egd
+    configStorageTopic: mm2-praha-to-egd-configs
+    offsetStorageTopic: mm2-praha-to-egd-offsets
+    statusStorageTopic: mm2-praha-to-egd-status
     config:
       config.storage.replication.factor: 1
       offset.storage.replication.factor: 1
