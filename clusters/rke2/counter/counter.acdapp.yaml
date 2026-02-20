@@ -28,6 +28,12 @@ spec:
         host: ondrej-counter.egd-rke2.sikademo.com
         EXTRA_TEXT: v4
 
+        enableArgoCDHooks: false
+        enableServiceMonitor: false
+        openshiftDashboardEnabled: false
+        openshiftConsoleLinkEnabled: false
+        grafanaDashboardEnabled: false
+
   ignoreDifferences:
     - group: apps
       kind: Deployment
