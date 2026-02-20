@@ -18,10 +18,6 @@ spec:
         port: 19092
         type: nodeport
         tls: false
-      - name: lb
-        port: 29092
-        type: loadbalancer
-        tls: false
       # - name: lbtls
       #   port: 29093
       #   type: loadbalancer
