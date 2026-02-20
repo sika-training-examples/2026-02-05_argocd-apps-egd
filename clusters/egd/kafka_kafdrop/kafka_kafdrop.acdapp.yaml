@@ -22,7 +22,7 @@ spec:
       helm:
         valuesObject:
           # https://github.com/sikalabs/charts/blob/master/charts/simple-kafdrop/values.yaml
-          host: kafka-kafdrop.apps.training.germanywestcentral.aroapp.io
+          host: kafka-kafdrop.apps.egd.germanywestcentral.aroapp.io
           kafkaBootstrapServer: egd-kafka-bootstrap.kafka.svc:9092
           ingressClassName: openshift-default
           tls: true
