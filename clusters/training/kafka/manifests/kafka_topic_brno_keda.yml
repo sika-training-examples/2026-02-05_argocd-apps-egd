@@ -4,7 +4,7 @@ metadata:
   name: brno-keda
   namespace: kafka
   labels:
-    strimzi.io/cluster: keda
+    strimzi.io/cluster: brno
 spec:
   partitions: 27
   replicas: 3
