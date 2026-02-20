@@ -18,4 +18,4 @@ spec:
       - CreateNamespace=true
   sources:
     - repoURL: https://gitlab.sikademo.com/egd/argocd-apps-egd.git
-      path: ./clusters/training/hello_brno_consumer/manifests
+      path: ./clusters/egd/hello_brno_consumer/manifests
