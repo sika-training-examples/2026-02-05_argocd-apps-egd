@@ -28,6 +28,9 @@ spec:
         host: ondrej-counter.egd-rke2.sikademo.com
         EXTRA_TEXT: v4
 
+        ingressClassName: nginx
+        ingressTlsEnabled: true
+
         enableArgoCDHooks: false
         enableServiceMonitor: false
         openshiftDashboardEnabled: false
