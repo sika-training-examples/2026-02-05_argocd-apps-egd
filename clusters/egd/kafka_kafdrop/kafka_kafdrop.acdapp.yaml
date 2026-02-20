@@ -25,7 +25,7 @@ spec:
           host: kafka-kafdrop.apps.egd.germanywestcentral.aroapp.io
           kafkaBootstrapServer: egd-kafka-bootstrap.kafka.svc:9092
           ingressClassName: openshift-default
-          tls: true
+          tls: false
           ingressExtraAnnotations:
             route.openshift.io/termination: edge
             route.openshift.io/insecureEdgeTerminationPolicy: Redirect
