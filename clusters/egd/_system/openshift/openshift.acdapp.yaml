@@ -19,3 +19,5 @@ spec:
   sources:
     - repoURL: https://gitlab.sikademo.com/egd/argocd-apps-egd.git
       path: ./clusters/egd/_system/openshift/manifests
+      directory:
+        recurse: true
