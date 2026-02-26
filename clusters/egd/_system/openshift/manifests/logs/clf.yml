@@ -28,6 +28,11 @@ spec:
         ca:
           configMapName: loki-gateway-ca-bundle
           key: service-ca.crt
+    - name: kafka-egd
+      type: kafka
+      kafka:
+        url: tcp://egd-kafka-bootstrap.kafka.svc:9092
+        topic: openshift-logs
 
   pipelines:
     - name: all-to-loki
@@ -38,3 +43,4 @@ spec:
       outputRefs:
         - loki-lab0
         - loki
+        - kafka-egd
