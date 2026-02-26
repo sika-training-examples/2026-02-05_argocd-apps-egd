@@ -17,8 +17,8 @@ spec:
           - kubernetes.container_name
     - name: loki
       type: loki
-      url: https://loki-gateway-http.openshift-logging.svc:8080
       loki:
+        url: https://loki-gateway-http.openshift-logging.svc:8080
         tenantKey: log_type
         labelKeys:
           - kubernetes.namespace_name
