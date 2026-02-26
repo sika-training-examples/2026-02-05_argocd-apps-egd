@@ -15,6 +15,18 @@ spec:
           - kubernetes.namespace_name
           - kubernetes.pod_name
           - kubernetes.container_name
+    - name: loki
+      type: loki
+      url: https://loki-gateway-http.openshift-logging.svc:8080
+      loki:
+        tenantKey: log_type
+        labelKeys:
+          - kubernetes.namespace_name
+          - kubernetes.pod_name
+          - kubernetes.container_name
+      secret:
+        name: loki-gateway-token
+
   pipelines:
     - name: all-to-loki
       inputRefs:
@@ -23,3 +35,4 @@ spec:
         - audit
       outputRefs:
         - loki-lab0
+        - loki
