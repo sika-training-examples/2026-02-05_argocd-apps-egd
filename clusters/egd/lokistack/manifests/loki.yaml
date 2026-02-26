@@ -13,5 +13,10 @@ spec:
       name: loki-azure
       type: azure
   storageClassName: managed-csi
+  limits:
+    global:
+      ingestion:
+        ingestionRate: 10
+        ingestionBurstSize: 15
   tenants:
     mode: openshift-logging
