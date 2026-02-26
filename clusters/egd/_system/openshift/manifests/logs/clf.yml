@@ -24,6 +24,10 @@ spec:
         authentication:
           token:
             from: serviceAccount
+      tls:
+        ca:
+          configMapName: loki-gateway-ca-bundle
+          key: service-ca.crt
 
   pipelines:
     - name: all-to-loki
