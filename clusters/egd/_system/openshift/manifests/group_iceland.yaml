@@ -5,6 +5,11 @@ metadata:
 users:
   - ondrejsikatest+iceland@gmail.com
 ---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: iceland-1
+---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
@@ -17,6 +22,11 @@ roleRef:
 subjects:
   - kind: Group
     name: iceland
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: iceland-2
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
